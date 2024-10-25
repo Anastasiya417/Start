@@ -1,0 +1,18 @@
+package org.example;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        var scanner = new Scanner(System.in);
+
+        System.out.println("What is fuel price today?");
+        var rate = scanner.nextDouble();
+
+        System.out.println("How much kilometers do you have?");
+        var kilometers = scanner.nextDouble();
+
+        var result = rate * kilometers;
+        System.out.println("Result = " + result);
+    }
+}
